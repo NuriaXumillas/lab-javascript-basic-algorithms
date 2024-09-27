@@ -10,6 +10,7 @@ console.log(`The navigator's name is  ${hacker2}`)
 
 
 // Iteration 2: Conditionals
+// Comparamos la longitud de los nombres
 
 
 function compareNamesLong(user1, user2) {
@@ -28,6 +29,7 @@ function compareNamesLong(user1, user2) {
 compareNamesLong(hacker1, hacker2)
 
 // Iteration 3: Loops 
+// imprimimos el nombre del conductor por caracteres en mayúsculas y con espacios
 
 function printNameUpperCase(driver) {
     let driverUpperCase = ''
@@ -45,7 +47,7 @@ function printNameUpperCase(driver) {
 
 console.log(printNameUpperCase(hacker1))
 
-
+// Le damos la vuelva al nombre del navigator
 
 function nameInReverse(navigator) {
     let navigatorReverse = ''
@@ -59,3 +61,26 @@ function nameInReverse(navigator) {
 }
 
 console.log(nameInReverse(hacker2))
+
+// Hacemos el lexicographic order ni puta idea de lo que es, por orden alfabetico vamos.
+
+function sameName(driver, navigator) {
+    
+    const comparisonResult = driver.toUpperCase().localeCompare(navigator.toUpperCase());
+
+    if (comparisonResult < 0) {
+        console.log("The driver's name goes first.");
+    } else if (comparisonResult > 0) {
+        console.log("Yo, the navigator goes first, definitely.");
+    } else {
+        console.log("What?! You both have the same name?");
+    }
+}
+
+sameName(hacker1, hacker2)
+
+
+// BONUS
+
+const longText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+
