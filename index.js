@@ -29,17 +29,33 @@ compareNamesLong(hacker1, hacker2)
 
 // Iteration 3: Loops 
 
-function processNames(driver, navigator) {
-    const driverUpperCase = ''
+function printNameUpperCase(driver) {
+    let driverUpperCase = ''
 
     for (let i = 0; i < driver.length; i++) {
 
-        driverUpperCase += drive[i].toUpperCase()
+        driverUpperCase += driver[i].toUpperCase()
         
-        if (i < driverName.length - 1) {
+        if (i < driver.length - 1) {
             driverUpperCase += ' '
         }
     }
+    return driverUpperCase
 }
 
-console.log(driverUpperCase);
+console.log(printNameUpperCase(hacker1))
+
+
+
+function nameInReverse(navigator) {
+    let navigatorReverse = ''
+
+    for (let i = navigator.length - 1; i >= 0; i--) {
+
+        navigatorReverse += navigator[i]
+        
+    }
+    return navigatorReverse
+}
+
+console.log(nameInReverse(hacker2))
